@@ -13,6 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(IndiaSeeder::class);
+
         $users = [
             ['name' => 'Admin User', 'email' => 'admin@example.com'],
             ['name' => 'Test User', 'email' => 'test@example.com'],
