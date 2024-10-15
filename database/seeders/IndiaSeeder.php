@@ -16,6 +16,7 @@ class IndiaSeeder extends FlexibleSeeder
                 "translations" => "translations",
                 "wikiDataId" => "wikiDataId",
             ],
+            "slug" => true, // Add slug for regions
         ],
         [
             "url" => "http://localhost:3000/local/terriory/india/subregions",
@@ -27,6 +28,7 @@ class IndiaSeeder extends FlexibleSeeder
                 "translations" => "translations",
                 "wikiDataId" => "wikiDataId",
             ],
+            "slug" => true, // Add slug for subregions
         ],
         [
             "url" => "http://localhost:3000/local/terriory/india/countries",
@@ -56,6 +58,7 @@ class IndiaSeeder extends FlexibleSeeder
                 "emoji" => "emoji",
                 "emojiU" => "emojiU",
             ],
+            "slug" => true, // Add slug for countries
         ],
         [
             "url" => "http://localhost:3000/local/terriory/india/states",
@@ -71,6 +74,7 @@ class IndiaSeeder extends FlexibleSeeder
                 "latitude" => "latitude",
                 "longitude" => "longitude",
             ],
+            "slug" => true, // Add slug for states
         ],
         [
             "url" => "http://localhost:3000/local/terriory/india/cities",
@@ -88,6 +92,7 @@ class IndiaSeeder extends FlexibleSeeder
                 "longitude" => "longitude",
                 "wikiDataId" => "wikiDataId",
             ],
+            "slug" => true, // Add slug for cities
         ],
     ];
 }

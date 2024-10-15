@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('region_id')->nullable();
             $table->unsignedBigInteger('subregion_id')->nullable();
             $table->string('name', 100);
+            $table->string('slug')->unique()->nullable();
             $table->char('iso2', 2)->nullable();
             $table->char('iso3', 3)->nullable();
             $table->char('numeric_code', 3)->nullable();

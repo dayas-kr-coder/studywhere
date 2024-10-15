@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('region_id');
             $table->string('name', 100);
+            $table->string('slug')->unique()->nullable();
             $table->json('translations')->nullable();
             $table->string('wikiDataId', 255)->nullable();
             $table->timestamps();

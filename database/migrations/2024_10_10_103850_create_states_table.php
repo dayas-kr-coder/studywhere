@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('country_id');
             $table->string('name', 255);
+            $table->string('slug')->unique()->nullable();
             $table->string('country_name')->nullable();
             $table->char('country_code', 2);
             $table->char('state_code', 5);
